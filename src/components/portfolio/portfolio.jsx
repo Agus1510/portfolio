@@ -20,8 +20,8 @@ function Portfolio() {
               <p> CodeLearn</p>
               <h1>
                 This was the final proyect that we made in group for SoyHenry
-                bootcamp, in this proyect I worked in the front end and maked
-                the design
+                bootcamp, in this proyect I worked in the front end and made the
+                design
               </h1>
             </div>
             <div className={style.pokemon}>
@@ -34,7 +34,7 @@ function Portfolio() {
               </a>
               <p>Pokemon API</p>
               <h1>
-                This was the first proyec that I made alone and it was for
+                This was the first proyect that I made alone and it was for
                 SoyHenry bootcamp
               </h1>
             </div>
