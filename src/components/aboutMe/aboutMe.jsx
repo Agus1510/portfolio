@@ -27,11 +27,6 @@ function AboutMe() {
             <h1>Let's Make something special</h1>
           </div>
         </div>
-        <img
-          src="https://i.imgur.com/006hDur.jpg"
-          alt="photo"
-          className={style.img}
-        />
       </div>
       <div className={style.scrollDown}>
         <span></span>
