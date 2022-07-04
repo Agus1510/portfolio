@@ -110,20 +110,20 @@
     border-radius: .5em;
     height: 100%;
     background-color: rgb(156, 0, 99);
-    width: 85%;
+    width: 90%;
 }
 .progressBack{
     border-radius: .5em;
     height: 100%;
     background-color: rgb(156, 0, 99);
-    width: 65%;
+    width:83%;
 }
 
 .progressReact{
     border-radius: .5em;
     height: 100%;
     background-color: rgb(156, 0, 99);
-    width: 80%;
+    width: 85%;
 }
 .scrollDown{
     position: absolute;
