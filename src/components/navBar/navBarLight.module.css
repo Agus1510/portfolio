@@ -23,7 +23,7 @@
             flex-direction: column;
     width: 10%;
     height: 100vh;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(223, 223, 223);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -70,8 +70,8 @@ html {
    
 .navBar a {
     text-decoration: none;
-    color: rgb(83, 83, 83);
-    border-bottom: 1px solid gray;
+    color: rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(32, 32, 32);
     line-height: 3em;
     width: 8em;
     text-align: center;

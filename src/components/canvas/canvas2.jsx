@@ -1,6 +1,14 @@
 import React from "react";
 
-function Canvas2() {
+function Canvas2(theme) {
+  var color = "rgba(150,150,150,";
+
+  if (theme === "dark") {
+    color = "rgba(150,150,150,";
+  } else if (theme === "light") {
+    color = "rgba(0,0,0,";
+  }
+
   var canvas = document.getElementById("canvas2"),
     can_w = parseInt(canvas.getAttribute("width")),
     can_h = parseInt(canvas.getAttribute("height")),
@@ -168,7 +176,7 @@ function Canvas2() {
         if (fraction < 1) {
           alpha = (1 - fraction).toString();
 
-          ctx.strokeStyle = "rgba(150,150,150," + alpha + ")";
+          ctx.strokeStyle = color + alpha + ")";
           ctx.lineWidth = link_line_width;
 
           ctx.beginPath();

@@ -8,26 +8,29 @@ import Canvas4 from "./components/canvas/canvas4";
 import AboutMe from "./components/aboutMe/aboutMe";
 import Skills from "./components/skills/skills";
 import Portfolio from "./components/portfolio/portfolio";
+import { useSelector } from "react-redux";
 
 function Animation() {
+  const theme = useSelector((state) => state.reducerCompleto.theme);
   {
-    setTimeout(() => Canvas(), 1);
-    setTimeout(() => Canvas2(), 1);
-    setTimeout(() => Canvas3(), 1);
-    setTimeout(() => Canvas4(), 1);
+    setTimeout(() => Canvas(theme), 1);
+    setTimeout(() => Canvas2(theme), 1);
+    setTimeout(() => Canvas3(theme), 1);
+    setTimeout(() => Canvas4(theme), 1);
   }
 }
 
 function App() {
+  const theme = useSelector((state) => state.reducerCompleto.theme);
   return (
     <div className={style.app}>
-      <NavBar />
+      <NavBar theme={theme} />
       <div className={style.flexColumn}>
-        <Home />
-        <AboutMe />
-        <Skills />
-        <Portfolio />
-        <Animation />
+        <Home theme={theme} />
+        <AboutMe theme={theme} />
+        <Skills theme={theme} />
+        <Portfolio theme={theme} />
+        <Animation theme={theme} />
       </div>
     </div>
   );
