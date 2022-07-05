@@ -110,3 +110,18 @@ html {
 .player{
     margin-top: 3em;
 }
+
+@media (max-width: 768px) {
+    .flexContainer{
+        display: none;
+        pointer-events: none;
+    }
+    .navBar{
+        display: none;
+        pointer-events: none;
+    }
+    .Links{
+        display: none;
+        pointer-events: none;
+    }
+}

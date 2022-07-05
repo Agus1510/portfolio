@@ -234,3 +234,53 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .canvas{
+    height:100%;
+  }
+  .flexContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .description{
+    margin-left: 0;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .descriptionContainer{
+    width: 100vw;
+  }
+
+  .glitch{
+    font-size: 4em;
+
+  }
+
+  .title{
+    margin-left: 1em;
+    width: 100%;
+  }
+
+  .scrollDown{
+    margin-top: 75em;
+    margin-left: 50%;
+  }
+
+  .progress{
+    margin-top: 5em;
+    margin-left: 3em;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+  }
+
+
+}

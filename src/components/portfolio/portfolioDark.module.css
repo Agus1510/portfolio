@@ -290,3 +290,31 @@ color: rgb(201, 201, 201);
     opacity: 0;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .flexContainer{
+    justify-content: center;
+
+  }
+  .description{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .description h3{
+    line-height: 2rem;
+  }
+
+  .glitch{
+    font-size: 5em;
+  }
+
+  .canvas{
+    height: 100%;
+  }
+  .scrollDown{
+    margin-left: 10%;
+  }
+}

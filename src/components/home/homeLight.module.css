@@ -282,3 +282,29 @@
               transition-delay: 0s !important;
     }
   }
+
+
+  @media (max-width: 768px) {
+    .flexContainer{
+      justify-content: center;
+
+    }
+    .description{
+      width: 100%;
+    }
+
+    .description h3{
+      line-height: 2rem;
+    }
+
+    .glitch{
+      font-size: 5em;
+    }
+
+    .canvas{
+      height: 100%;
+    }
+    .scrollDown{
+      margin-left: 10%;
+    }
+}

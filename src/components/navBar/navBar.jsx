@@ -56,7 +56,7 @@ function NavBar(props) {
             <Theme />
           </a>
         </div>
-        <div className={style.player}>
+        {/* <div className={style.player}>
           <ReactPlayer
             url="https://soundcloud.com/themostepicmusic/epic-score-the-end-is-in-sight"
             config={{
@@ -67,7 +67,7 @@ function NavBar(props) {
             volume=".4"
             playing={true}
           />
-        </div>
+        </div> */}
       </div>
     </ThemeProvider>
   );
