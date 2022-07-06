@@ -238,7 +238,7 @@
 
 @media (max-width: 768px) {
   .canvas{
-    height:70em;
+    height:65em;
   }
   .flexContainer2{
     display: flex;
@@ -272,7 +272,7 @@
   }
 
   .scrollDown{
-    margin-top: 75em;
+    margin-top: 62em;
     margin-left: 50%;
   }
 
