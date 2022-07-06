@@ -1,3 +1,6 @@
+
+
+@media (max-width: 768px) {
 .flexContainer{
     display: flex;
     height: 3em;
@@ -27,7 +30,7 @@
     right: 0%;
     transform: translateY(-10px);
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-    pointer-events: auto; 
+    pointer-events: none; 
   }
   
   .dropdownmenu a{
@@ -37,6 +40,14 @@
     padding-bottom: 0.5em;
     border-bottom: 1px solid;
     border-color: rgb(86, 86, 86);
+    padding-top: 0.3em;
+  }
+
+  .dropdownmenu p{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
     padding-top: 0.3em;
   }
 
@@ -68,3 +79,12 @@
     border-color: rgb(86, 86, 86);
     padding-top: 0.3em;
   }
+
+  .dropdownmenuActive p{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 0.5em;
+    padding-top: 0.3em;
+  }
+}

@@ -2,12 +2,24 @@ import React from "react";
 import Menu from "../../icons/menu";
 import { useState, useEffect } from "react";
 import style from "./navBarMobile.module.css";
+import { useDispatch } from "react-redux";
+import { themeSwitcher } from "../../Redux/reducer";
 
-function NavBarMobile() {
+function NavBarMobile(props) {
+  const dispatch = useDispatch();
   const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    if (props.theme === "dark") {
+      dispatch(themeSwitcher("light"));
+    } else {
+      dispatch(themeSwitcher("dark"));
+    }
+  };
+
   useEffect(() => {
     document.addEventListener("click", (e) => {
-      const isDropdownButton = e.target.matches(style.icon);
+      const isDropdownButton = e.target.closest("#data-dropdown-button");
       if (!isDropdownButton && e.target.closest("[data-dropdown]") != null)
         return;
       if (isDropdownButton) {
@@ -22,7 +34,7 @@ function NavBarMobile() {
   return (
     <div className={style.flexContainer}>
       <div data-dropdown className={style.dropdown}>
-        <div data-dropdown-button className={style.icon}>
+        <div id="data-dropdown-button" className={style.icon}>
           <Menu />
         </div>
         <div className={active ? style.dropdownmenuActive : style.dropdownmenu}>
@@ -53,6 +65,7 @@ function NavBarMobile() {
           >
             LinkedIn
           </a>
+          <p onClick={() => handleClick()}>Change theme</p>
         </div>
       </div>
     </div>

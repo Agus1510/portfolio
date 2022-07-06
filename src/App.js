@@ -26,7 +26,7 @@ function App() {
   return (
     <div className={style.app}>
       <NavBar theme={theme} />
-      <NavBarMobile />
+      <NavBarMobile theme={theme} />
       <div className={style.flexColumn}>
         <Home theme={theme} />
         <AboutMe theme={theme} />
