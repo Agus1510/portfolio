@@ -237,3 +237,45 @@ color: rgba(19, 19, 19);
     opacity: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .flexContainer{
+    justify-content: center;
+    margin-left: 0em;
+  }
+  .flexContainer2{
+    margin-left: 0;
+    width: 100%;
+  }
+  .description{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+
+  }
+
+  .description h3{
+    line-height: 2rem;
+    margin-left: 0;
+  }
+
+  .glitch{
+    font-size: 3em;
+    margin-left: 0em;
+    width: fit-content;
+  }
+
+  .title{
+    margin-left: 1em;
+  }
+
+  .canvas{
+    height: 200%;
+  }
+  .scrollDown{
+    margin-left: 10%;
+  }
+  .descriptionContainer{
+    width: 100vw;
+  }
+}

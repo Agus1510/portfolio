@@ -202,7 +202,7 @@
 
   .glitch{
     font-size: 4em;
-
+    width: fit-content;
   }
 
   .title{

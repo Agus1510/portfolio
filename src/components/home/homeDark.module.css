@@ -298,6 +298,7 @@
 
     .glitch{
       font-size: 5em;
+      width: fit-content;
     }
     .canvas{
       height: 100%;
