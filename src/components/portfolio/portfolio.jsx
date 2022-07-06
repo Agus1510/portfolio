@@ -57,7 +57,7 @@ function Portfolio(props) {
             </div>
           </div>
         </div>
-        <canvas id="canvas4" width="800" height="960" className={style.canvas}>
+        <canvas id="canvas4" width="400" height="1200" className={style.canvas}>
           Your Browser Don't Support Canvas, Please Download Chrome ^_^``
         </canvas>
       </body>
