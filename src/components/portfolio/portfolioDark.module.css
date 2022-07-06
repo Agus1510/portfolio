@@ -316,12 +316,13 @@ color: rgb(201, 201, 201);
 
   .glitch{
     font-size: 3em;
-    margin-left: 0em;
+    margin-left: 0.3em;
     width: fit-content;
   }
 
   .title{
-    margin-left: 1em;
+    margin-left: 0;
+    width: 80%;
   }
 
   .canvas{

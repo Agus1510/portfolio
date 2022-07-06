@@ -263,11 +263,12 @@
   .glitch{
     font-size: 4em;
     width: fit-content;
+    margin-left: 0.3em;
   }
 
   .title{
-    margin-left: 1em;
-    width: 100%;
+    margin-left: 0;
+    width: 80%;
   }
 
   .scrollDown{

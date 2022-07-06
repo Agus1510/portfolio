@@ -27,8 +27,6 @@
           flex-direction: column;
   margin-top: 2.3em;
   height: 35em;
-  width: 75%;
-  margin-left: 5em;
 }
 .description h3{
   font-size: 2em;
@@ -51,6 +49,7 @@
           animation: glitch 600ms infinite;
   line-height: 6rem;
   margin-bottom: 0.4em;
+  margin-left: 0.3em;
 }
 
 .glitch p{

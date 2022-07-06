@@ -1,3 +1,5 @@
+
+
 .canvas{
   background-color: #000;
   height: 200%;
@@ -21,7 +23,7 @@
   color: rgb(251, 251, 251);
   margin-left: 5em;
   margin-top: 8em;
-  width: 30em;
+  width: 100%;
 }
 .title p{
   opacity: 1;
@@ -201,13 +203,14 @@
   }
 
   .glitch{
+    margin-left: 0.3em;
     font-size: 4em;
     width: fit-content;
   }
 
   .title{
-    margin-left: 1em;
-    width: 100%;
+    margin-left: 0;
+    width: 80%;
   }
 
   .scrollDown{

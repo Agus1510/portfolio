@@ -7,6 +7,7 @@
 .canvas{
     background-color: #000;
     height: 200%;
+    width: 100vw;
 }
 .flexContainer {
   display: -webkit-box;
@@ -27,15 +28,13 @@
           flex-direction: column;
   margin-top: 2.3em;
   height: 35em;
-  width: 75%;
-  margin-left: 5em;
 }
 .description h3{
   font-size: 2em;
   color: rgba(255, 255, 255, 0.721);
   line-height: 0rem;
   font-weight: 200;
-  margin-left: 0.3em;
+  margin-left: 1.3em;
 }
 
 .glitch{
@@ -51,6 +50,7 @@
           animation: glitch 600ms infinite;
   line-height: 6rem;
   margin-bottom: 0.4em;
+  margin-left: 0.3em;
 }
 
 .glitch p{

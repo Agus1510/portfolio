@@ -9,6 +9,7 @@ import AboutMe from "./components/aboutMe/aboutMe";
 import Skills from "./components/skills/skills";
 import Portfolio from "./components/portfolio/portfolio";
 import { useSelector } from "react-redux";
+import NavBarMobile from "./components/navBar/navBarMobile";
 
 function Animation() {
   const theme = useSelector((state) => state.reducerCompleto.theme);
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className={style.app}>
       <NavBar theme={theme} />
+      <NavBarMobile />
       <div className={style.flexColumn}>
         <Home theme={theme} />
         <AboutMe theme={theme} />
