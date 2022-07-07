@@ -38,6 +38,13 @@
     background-color: #313131;
   }
 
+  @media (max-width: 1266px) {
+    .flexColumn{
+        width: 85%;
+        margin-left: 15%;
+    }
+
+}
 
   @media (max-width: 768px) {
     .flexColumn{

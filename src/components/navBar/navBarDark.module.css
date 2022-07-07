@@ -111,6 +111,13 @@ html {
     margin-top: 3em;
 }
 
+@media (max-width: 1266px) {
+    .navBar{
+        width: 15%;
+    }
+
+}
+
 @media (max-width: 768px) {
     .flexContainer{
         display: none;
