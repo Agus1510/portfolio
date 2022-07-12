@@ -31,6 +31,13 @@ function NavBarMobile(props) {
       console.log(active);
     });
   }, []);
+
+  const handleCv = () => {
+    window.open("files/CV_Agustin Panizza_FullStack Developer.pdf");
+  };
+  const handleCvES = () => {
+    window.open("files/CV_Agustin Panizza_FullStack Developer.pdf");
+  };
   return (
     <div className={style.flexContainer}>
       <div data-dropdown className={style.dropdown}>
@@ -51,6 +58,8 @@ function NavBarMobile(props) {
           <a href="#portfolio" data-dropdown-button>
             Portfolio
           </a>
+          <a onClick={() => handleCv()}>English CV</a>
+          <a onClick={() => handleCvES()}>Spanish CV</a>
           <a
             href="https://github.com/Agus1510"
             target="_blank"

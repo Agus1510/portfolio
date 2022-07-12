@@ -21,6 +21,12 @@ function NavBar(props) {
     }
   };
 
+  const handleCv = () => {
+    window.open("files/CV_Agustin Panizza_FullStack Developer english.pdf");
+  };
+  const handleCvES = () => {
+    window.open("files/CV_Agustin Panizza_FullStack Developer.pdf");
+  };
   return (
     <ThemeProvider
       theme={
@@ -36,6 +42,8 @@ function NavBar(props) {
           <a href="#aboutMe">About me</a>
           <a href="#skills">My skills</a>
           <a href="#portfolio">Portfolio</a>
+          <a onClick={() => handleCv()}>English CV</a>
+          <a onClick={() => handleCvES()}>Spanish CV</a>
         </div>
         <div className={style.Links}>
           <a

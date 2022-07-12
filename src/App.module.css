@@ -43,8 +43,8 @@
         width: 85%;
         margin-left: 15%;
     }
-
-}
+  
+  }
 
   @media (max-width: 768px) {
     .flexColumn{
@@ -52,3 +52,4 @@
       margin-left: 0%;
     }
 }
+
