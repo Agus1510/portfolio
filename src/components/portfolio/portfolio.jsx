@@ -38,7 +38,7 @@ function Portfolio(props) {
               </div>
               <div className={style.pokemon}>
                 <a
-                  href="https://pokemon.panizza.dev/"
+                  href="https://pokemon-dbchelk3w-agus1510.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
