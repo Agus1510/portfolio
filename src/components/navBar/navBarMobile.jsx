@@ -33,10 +33,10 @@ function NavBarMobile(props) {
   }, []);
 
   const handleCv = () => {
-    window.open("files/CV_Agustin Panizza_FullStack Developer english.pdf");
+    window.open("files/CV-Agustin-Panizza-FullStack-web-developer-english.pdf");
   };
   const handleCvES = () => {
-    window.open("files/CV_Agustin Panizza_FullStack Developer.pdf");
+    window.open("files/CV-Agustin-Panizza-FullStack-web-developer.pdf");
   };
   return (
     <div className={style.flexContainer}>
