@@ -4,7 +4,7 @@ import React from "react";
 
 function Theme() {
   const theme = useSelector((state) => state.reducerCompleto.theme);
-  if (theme === "dark") {
+  if (theme === "light") {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ function Theme() {
         />
       </svg>
     );
-  } else if (theme === "light") {
+  } else if (theme === "dark") {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
