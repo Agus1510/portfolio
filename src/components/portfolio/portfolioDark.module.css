@@ -1,6 +1,6 @@
 .canvas{
   background-color: #000;
-  height: 200%;
+  height: 100%;
 }
 
 .flexContainer{
@@ -75,6 +75,7 @@ width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
     width: 100%;
     justify-content: center;
             gap:5em;
@@ -249,6 +250,7 @@ width: 100%;
   .flexContainer{
     justify-content: center;
     margin-left: 0em;
+    height: 160em;
   }
   .flexContainer2{
     margin-left: 0;
@@ -278,7 +280,8 @@ width: 100%;
   }
 
   .canvas{
-    height: 80em;
+    height: 100%;
+    width: 100%;
   }
   .scrollDown{
     margin-left: 10%;

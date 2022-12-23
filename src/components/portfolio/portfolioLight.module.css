@@ -74,6 +74,7 @@ width: 100%;
 .description{
 display: -webkit-box;
 display: -ms-flexbox;
+align-items: center;
 display: flex;
   width: 100%;
   justify-content: center;
@@ -249,6 +250,7 @@ color: rgba(19, 19, 19);
   .flexContainer{
     justify-content: center;
     margin-left: 0em;
+    height: 160em;
   }
   .flexContainer2{
     margin-left: 0;
@@ -278,7 +280,8 @@ color: rgba(19, 19, 19);
   }
 
   .canvas{
-    height: 80em;
+    height: 100%;
+    width: 100%;
   }
   .scrollDown{
     margin-left: 10%;
