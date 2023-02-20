@@ -333,13 +333,19 @@ width: 100%;
   }
   .flexContainer2{
     margin-left: 0;
-    width: 100%;
+    width: 90%;
   }
   .description{
-    width: 100%;
     flex-direction: column;
     margin-left: 0;
 
+  }
+  .category{
+    width: 100%;
+    align-self: center;
+  }
+  .grid{
+    width: 90%;
   }
 
   .description h3{
