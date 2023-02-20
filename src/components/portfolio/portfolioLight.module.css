@@ -23,12 +23,12 @@ flex-direction: column;
   display: grid;
   width: 90%;
   min-height: 1em;
-  grid-template-columns: repeat(4, 21%);
+  grid-template-columns: repeat(3, 22%);
   grid-auto-rows: 45em;
   margin-bottom: 10em;
   justify-content: center;
   margin-top: 2em;
-  gap: 5em;
+  gap: 8em;
   align-self: center;
 }
 
