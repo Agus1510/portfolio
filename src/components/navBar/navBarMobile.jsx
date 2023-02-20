@@ -3,7 +3,7 @@ import Menu from "../../icons/menu";
 import { useState, useEffect } from "react";
 import style from "./navBarMobile.module.css";
 import { useDispatch } from "react-redux";
-import { themeSwitcher } from "../../Redux/reducer";
+import { themeSwitcher } from "../../redux/reducer";
 
 function NavBarMobile(props) {
   const dispatch = useDispatch();
@@ -28,7 +28,6 @@ function NavBarMobile(props) {
       if (!isDropdownButton) {
         setActive(false);
       }
-      console.log(active);
     });
   }, []);
 

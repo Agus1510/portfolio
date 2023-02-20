@@ -6,7 +6,7 @@ import Github from "../../icons/github";
 import ReactPlayer from "react-player";
 import { ThemeProvider } from "styled-components";
 import Theme from "../../icons/theme";
-import { themeSwitcher } from "../../Redux/reducer";
+import { themeSwitcher } from "../../redux/reducer";
 import { useDispatch } from "react-redux";
 var style = darkTheme;
 

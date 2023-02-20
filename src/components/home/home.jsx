@@ -11,7 +11,7 @@ function Home(props) {
         props.theme === "light" ? (style = lightTheme) : (style = darkTheme)
       }
     >
-      <body id="top" className={style.flexContainer}>
+      <div id="top" className={style.flexContainer}>
         <div className={style.description}>
           <p className={style.glitch}>
             <span aria-hidden="true">Hi, i'm Agustin.</span>
@@ -28,7 +28,7 @@ function Home(props) {
         <canvas id="canvas" width="800" height="960" className={style.canvas}>
           Your Browser Don't Support Canvas, Please Download Chrome ^_^``
         </canvas>
-      </body>
+      </div>
     </ThemeProvider>
   );
 }

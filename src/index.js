@@ -2,13 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import store, { Persistor } from "./Redux/store/store";
+import store, { Persistor } from "./redux/store/store";
 import { PersistGate } from "redux-persist/integration/react";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
+import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(process.env.REACT_APP_BASE_URL);
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 root.render(
   <Provider store={store}>
     <BrowserRouter>
