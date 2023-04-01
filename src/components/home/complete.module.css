@@ -6,6 +6,10 @@
     gap: 0;
 }
 
+.blob{
+  z-index: 10;
+}
+
 @media (max-width: 1266px) {
     .Home{
         width: 85%;
