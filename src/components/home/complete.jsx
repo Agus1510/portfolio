@@ -13,6 +13,7 @@ function Complete() {
   return (
     <div className={style.Home}>
       <div id="blob" className={style.blob}></div>
+      <audio src="/music.mp3" autoPlay />
       <Home theme={theme} />
       <AboutMe theme={theme} />
       <Skills theme={theme} />

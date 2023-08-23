@@ -25,7 +25,7 @@ function NavBar(props) {
     window.open("files/CV-Agustin-Panizza-FullStack-web-developer-english.pdf");
   };
   const handleCvES = () => {
-    window.open("files/CV-Agustin-Panizza-FullStack-web-developer.pdf");
+    window.open("files/CV-Agustin-Panizza-FullStack-web-developer.docx");
   };
   return (
     <ThemeProvider
