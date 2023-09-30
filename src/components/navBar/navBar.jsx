@@ -60,9 +60,9 @@ function NavBar(props) {
           >
             <Linkedin />
           </a>
-          <a onClick={() => handleClick()}>
+          {/* <a onClick={() => handleClick()}>
             <Theme />
-          </a>
+          </a> */}
         </div>
         {/* <div className={style.player}>
           <ReactPlayer

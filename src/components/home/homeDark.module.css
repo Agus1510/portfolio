@@ -11,6 +11,11 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-image: url("../../../public/img/fondo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .description{
   position: absolute;
@@ -23,6 +28,7 @@
           flex-direction: column;
   margin-top: 2.3em;
   height: 35em;
+  z-index: 3;
 }
 .description h3{
   font-size: 2em;
@@ -46,10 +52,62 @@
   line-height: 6rem;
   margin-bottom: 0.4em;
   margin-left: 0.3em;
+  z-index: 5;
 }
+
+
+.first {
+  display: flex;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease; 
+}
+
+.planeta1 {
+  left: 0; /* Mueve planeta1 hacia la izquierda */
+}
+
+.planeta2 {
+  left: 0; /* Mueve planeta2 hacia la izquierda */
+}
+
+.planeta3 {
+  left: 0; /* Mueve planeta3 hacia la izquierda */
+}
+
+.planeta4 {
+  right: 0; /* Mueve planeta4 hacia la derecha */
+}
+
+.planeta5 {
+  right: 0; /* Mueve planeta5 hacia la derecha */
+}
+
+.planeta6 {
+  right: 0; /* Mueve planeta6 hacia la derecha */
+}
+
+.asteroidContainer {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.asteroidContainer img {
+  max-width: 100%;
+  transition: transform 0.5s ease; /* Agrega una transición suave al efecto de zoom */
+}
+
 
 .glitch p{
   line-height: 6rem;
+  z-index: 8;
 }
 
 .glitch span{
