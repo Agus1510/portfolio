@@ -34,7 +34,7 @@
   font-size: 2em;
   color: rgba(255, 255, 255, 0.721);
   line-height: 0rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-left: 1.3em;
 }
 
@@ -54,6 +54,17 @@
   margin-left: 0.3em;
   z-index: 5;
 }
+.glitch1{
+  position: relative;
+  color: whitesmoke;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-bottom: 0.4em;
+  margin-left: 0.3em;
+  z-index: 5;
+}
+
 
 
 .first {
@@ -105,19 +116,19 @@
 }
 
 
-.glitch p{
+.glitch p, .glitch1 p{
   line-height: 6rem;
   z-index: 8;
 }
 
-.glitch span{
+.glitch span, .glitch1 span{
   position: absolute;
   top:0;
   left:0;
   line-height: 6rem;
 }
 
-.glitch span:first-child{
+.glitch span:first-child {
   -webkit-animation: glitch 650ms infinite;
           animation: glitch 650ms infinite;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
@@ -127,7 +138,17 @@
           transform: translate(-0.05em, -0.0125em);
   opacity: .8;
 }
-.glitch span:last-child{
+
+
+.glitch1 span:first-child{
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+          clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  -webkit-transform: translate(-0.05em, -0.0125em);
+      -ms-transform: translate(-0.05em, -0.0125em);
+          transform: translate(-0.05em, -0.0125em);
+  opacity: .8;
+}
+.glitch span:last-child .glitch1 span:last-child{
   -webkit-animation: glitch 800ms infinite;
           animation: glitch 800ms infinite;
   -webkit-clip-path: polygon(0 80%, 100% 40%, 100% 100%, 0 100%);

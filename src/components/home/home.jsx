@@ -57,7 +57,7 @@ function Home(props) {
     >
       <div id="top" className={style.flexContainer}>
         <div className={style.description}>
-          <p className={style.glitch}>
+          <p className={style.glitch1}>
             <span aria-hidden="true">Hi, i'm Agustin.</span>
             Hi, i'm Agustin.
             <span aria-hidden="true">Hi, i'm Agustin.</span>
