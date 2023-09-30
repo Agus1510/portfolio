@@ -66,7 +66,6 @@
 }
 
 
-
 .first {
   display: flex;
   position: absolute;
@@ -358,26 +357,53 @@
   }
 
   @media (max-width: 768px) {
-    .flexContainer{
+    .flexContainer {
       justify-content: center;
-
+      overflow: hidden;
     }
-    .description{
+  
+    .description {
       width: 100%;
     }
-
-    .description h3{
+  
+    .description h3 {
       line-height: 2rem;
     }
-
-    .glitch{
+  
+    .glitch {
       font-size: 5em;
       width: fit-content;
     }
-    .canvas{
+  
+    .canvas {
       height: 100%;
     }
-    .scrollDown{
+  
+    .scrollDown {
       margin-left: 10%;
     }
-}
+  
+    .first {
+      height: 50%;
+      width: 100%;
+      overflow: hidden;
+      overflow-x: hidden;
+      bottom: 0;
+    }
+  
+    .asteroidContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 100%;
+      rotate: 90deg;
+      bottom: 0;
+      overflow: hidden;
+    }
+
+    .asteroidContainer img{
+      height: 100%;
+      
+    }
+  }
