@@ -28,11 +28,7 @@ function NavBar(props) {
     window.open("files/CV-Agustin-Panizza-FullStack-web-developer.docx");
   };
   return (
-    <ThemeProvider
-      theme={
-        props.theme === "light" ? (style = lightTheme) : (style = darkTheme)
-      }
-    >
+    <ThemeProvider theme={(style = darkTheme)}>
       <div className={style.navBar}>
         <div className={style.image}>
           <img src="img/smile.png" alt="logo" />

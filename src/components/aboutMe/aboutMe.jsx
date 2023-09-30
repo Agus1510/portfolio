@@ -5,11 +5,7 @@ import { ThemeProvider } from "styled-components";
 var style = darkTheme;
 function AboutMe(props) {
   return (
-    <ThemeProvider
-      theme={
-        props.theme === "light" ? (style = lightTheme) : (style = darkTheme)
-      }
-    >
+    <ThemeProvider theme={(style = darkTheme)}>
       <body id="aboutMe" className={style.flexContainer}>
         <div className={style.flexContainer2}>
           <div className={style.title}>

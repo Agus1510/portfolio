@@ -36,7 +36,7 @@ function Home(props) {
       const maxScroll =
         document.documentElement.scrollHeight - window.innerHeight;
 
-      let speedScale = 0.035; // Valor predeterminado
+      let speedScale = 0.015; // Valor predeterminado
       if (windowWidth < 100) {
         // Si el ancho de la pantalla es menor a 100, ajusta la velocidad
         speedScale = 1.959;
@@ -75,11 +75,7 @@ function Home(props) {
   }, [windowWidth]);
 
   return (
-    <ThemeProvider
-      theme={
-        props.theme === "light" ? (style = lightTheme) : (style = darkTheme)
-      }
-    >
+    <ThemeProvider theme={(style = darkTheme)}>
       <div id="top" className={style.flexContainer}>
         <div className={style.description}>
           <p className={style.glitch1}>
@@ -97,54 +93,53 @@ function Home(props) {
         <canvas id="canvas" width="800" height="960" className={style.canvas}>
           Your Browser Don't Support Canvas, Please Download Chrome ^_^``
         </canvas>
-        <img
-          src="./img/planeta1.png"
-          alt="planeta1"
-          className={`${style.first} ${style.planeta1}`}
-          ref={planet1Ref}
-        />
-        <img
-          src="./img/planeta2.png"
-          alt="planeta2"
-          className={`${style.first} ${style.planeta2}`}
-          ref={planet2Ref}
-        />
-        {windowWidth > 1000 && (
-          <>
-            <img
-              src="./img/planeta3.png"
-              alt="planeta3"
-              className={`${style.first} ${style.planeta3}`}
-              ref={planet3Ref}
-            />
-            <img
-              src="./img/planeta4.png"
-              alt="planeta4"
-              className={`${style.first} ${style.planeta4}`}
-              ref={planet4Ref}
-            />
-            <img
-              src="./img/planeta5.png"
-              alt="planeta5"
-              className={`${style.first} ${style.planeta5}`}
-              ref={planet5Ref}
-            />
-            <img
-              src="./img/planeta6.png"
-              alt="planeta6"
-              className={`${style.first} ${style.planeta6}`}
-              ref={planet6Ref}
-            />
-          </>
-        )}
-        <div
-          className={style.asteroidContainer}
-          ref={asteroidContainerRef}
-          style={{ opacity: opacity }}
-        >
+        <div className={style.planetas}>
+          <img
+            src="./img/planeta1.png"
+            alt="planeta1"
+            className={`${style.first} ${style.planeta1}`}
+            ref={planet1Ref}
+          />
+          <img
+            src="./img/planeta2.png"
+            alt="planeta2"
+            className={`${style.first} ${style.planeta2}`}
+            ref={planet2Ref}
+          />
+          {windowWidth > 1000 && (
+            <>
+              <img
+                src="./img/planeta3.png"
+                alt="planeta3"
+                className={`${style.first} ${style.planeta3}`}
+                ref={planet3Ref}
+              />
+              <img
+                src="./img/planeta4.png"
+                alt="planeta4"
+                className={`${style.first} ${style.planeta4}`}
+                ref={planet4Ref}
+              />
+              <img
+                src="./img/planeta5.png"
+                alt="planeta5"
+                className={`${style.first} ${style.planeta5}`}
+                ref={planet5Ref}
+              />
+              <img
+                src="./img/planeta6.png"
+                alt="planeta6"
+                className={`${style.first} ${style.planeta6}`}
+                ref={planet6Ref}
+              />
+            </>
+          )}
+        </div>
+        <div className={style.asteroidContainer} style={{ opacity: opacity }}>
           <img
             src="./img/piedras.png"
             alt="piedras"
+            ref={asteroidContainerRef}
             className={style.asteroid}
           />
         </div>

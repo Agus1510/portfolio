@@ -7,11 +7,7 @@ var style = darkTheme;
 
 function Skills(props) {
   return (
-    <ThemeProvider
-      theme={
-        props.theme === "light" ? (style = lightTheme) : (style = darkTheme)
-      }
-    >
+    <ThemeProvider theme={(style = darkTheme)}>
       <body id="skills" className={style.flexContainer}>
         <div className={style.flexContainer2}>
           <div className={style.descriptionContainer}>

@@ -43,9 +43,7 @@ function Portfolio({ theme, props }) {
     }
   });
   return (
-    <ThemeProvider
-      theme={theme === "light" ? (style = lightTheme) : (style = darkTheme)}
-    >
+    <ThemeProvider theme={(style = darkTheme)}>
       <body id="portfolio" className={style.flexContainer}>
         <div className={style.title}>
           <p className={style.glitch}>
