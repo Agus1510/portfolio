@@ -36,7 +36,7 @@ function Home(props) {
       const maxScroll =
         document.documentElement.scrollHeight - window.innerHeight;
 
-      let speedScale = 0.015; // Valor predeterminado
+      let speedScale = 0.015;
       if (windowWidth < 100) {
         // Si el ancho de la pantalla es menor a 100, ajusta la velocidad
         speedScale = 1.959;
