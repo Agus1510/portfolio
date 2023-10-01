@@ -43,54 +43,52 @@ function Portfolio({ theme, props }) {
     }
   });
   return (
-    <ThemeProvider theme={(style = darkTheme)}>
-      <body id="portfolio" className={style.flexContainer}>
-        <div className={style.title}>
-          <p className={style.glitch}>
-            <span aria-hidden="true">My portfolio</span>
-            My portfolio<span aria-hidden="true">My portfolio</span>
-          </p>
-        </div>
-        <div className={style.grid}>
-          {array
-            ? array.map((p, index) => (
-                <a
-                  href={p.link}
-                  target="_blank"
-                  className={style.link}
-                  key={p._id}
-                >
-                  <div className={style.category}>
-                    <div className={style.img}>
-                      <img src={p.image[0].data_url} />
-                    </div>
-                    <div className={style.name}>
-                      <h1>{p.name}</h1>
-                    </div>
-                    <div className={style.description}>
-                      <EditorContent editor={Editor(p.about)} />
-                    </div>
+    <body id="portfolio" className={style.flexContainer}>
+      <div className={style.title}>
+        <p className={style.glitch}>
+          <span aria-hidden="true">My portfolio</span>
+          My portfolio<span aria-hidden="true">My portfolio</span>
+        </p>
+      </div>
+      <div className={style.grid}>
+        {array
+          ? array.map((p, index) => (
+              <a
+                href={p.link}
+                target="_blank"
+                className={style.link}
+                key={p._id}
+              >
+                <div className={style.category}>
+                  <div className={style.img}>
+                    <img src={p.image[0].data_url} />
                   </div>
-                </a>
-              ))
-            : null}
-        </div>
-        {user?.isAdmin ? (
-          <div className={style.category2} onClick={() => handleAdd()}>
-            <div className={style.img2}>
-              <IoAddCircleOutline />
-            </div>
-            <div className={style.name2}>
-              <h1>Add Project</h1>
-            </div>
+                  <div className={style.name}>
+                    <h1>{p.name}</h1>
+                  </div>
+                  <div className={style.description}>
+                    <EditorContent editor={Editor(p.about)} />
+                  </div>
+                </div>
+              </a>
+            ))
+          : null}
+      </div>
+      {user?.isAdmin ? (
+        <div className={style.category2} onClick={() => handleAdd()}>
+          <div className={style.img2}>
+            <IoAddCircleOutline />
           </div>
-        ) : null}
-        <canvas id="canvas4" width="400" height="1000" className={style.canvas}>
-          Your Browser Don't Support Canvas, Please Download Chrome ^_^``
-        </canvas>
-        {addRoom ? <AddProject /> : null}
-      </body>
-    </ThemeProvider>
+          <div className={style.name2}>
+            <h1>Add Project</h1>
+          </div>
+        </div>
+      ) : null}
+      <canvas id="canvas4" width="400" height="1000" className={style.canvas}>
+        Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+      </canvas>
+      {addRoom ? <AddProject /> : null}
+    </body>
   );
 }
 export default Portfolio;

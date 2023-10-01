@@ -352,20 +352,20 @@
     *,
     ::before,
     ::after{
-      -webkit-animation-delay: -1ms !important;
-              animation-delay: -1ms !important;
-      -webkit-animation-duration: 1ms !important;
-              animation-duration: 1ms !important;
-      -webkit-animation-iteration-count: 1 !important;
-              animation-iteration-count: 1 !important;
-      background-attachment: initial !important;
-      scroll-behavior: auto !important;
-      -webkit-transition-duration: 0s !important;
-           -o-transition-duration: 0s !important;
-              transition-duration: 0s !important;
-      -webkit-transition-delay: 0s !important;
-           -o-transition-delay: 0s !important;
-              transition-delay: 0s !important;
+      -webkit-animation-delay: -1ms ;
+              animation-delay: -1ms ;
+      -webkit-animation-duration: 1ms ;
+              animation-duration: 1ms ;
+      -webkit-animation-iteration-count: 1 ;
+              animation-iteration-count: 1 ;
+      background-attachment: initial ;
+      scroll-behavior: auto ;
+      -webkit-transition-duration: 0s ;
+           -o-transition-duration: 0s ;
+              transition-duration: 0s ;
+      -webkit-transition-delay: 0s ;
+           -o-transition-delay: 0s t;
+              transition-delay: 0s ;
     }
   }
 
