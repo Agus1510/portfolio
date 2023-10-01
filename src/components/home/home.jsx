@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import lightTheme from "./homeLight.module.css";
 import darkTheme from "./homeDark.module.css";
 import { ThemeProvider } from "styled-components";
 var style = darkTheme;
@@ -36,7 +35,7 @@ function Home(props) {
       const maxScroll =
         document.documentElement.scrollHeight - window.innerHeight;
 
-      let speedScale = 0.035; // Valor predeterminado
+      let speedScale = 0.015;
       if (windowWidth < 100) {
         // Si el ancho de la pantalla es menor a 100, ajusta la velocidad
         speedScale = 1.959;
@@ -75,28 +74,24 @@ function Home(props) {
   }, [windowWidth]);
 
   return (
-    <ThemeProvider
-      theme={
-        props.theme === "light" ? (style = lightTheme) : (style = darkTheme)
-      }
-    >
-      <div id="top" className={style.flexContainer}>
-        <div className={style.description}>
-          <p className={style.glitch1}>
-            <span aria-hidden="true">Hi, i'm Agustin.</span>
-            Hi, i'm Agustin.
-            <span aria-hidden="true">Hi, i'm Agustin.</span>
-          </p>
-          <h3> FullStack web developer</h3>
-        </div>
-        <div className={style.scrollDown}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <canvas id="canvas" width="800" height="960" className={style.canvas}>
-          Your Browser Don't Support Canvas, Please Download Chrome ^_^``
-        </canvas>
+    <div id="top" className={style.flexContainer}>
+      <div className={style.description}>
+        <p className={style.glitch1}>
+          <span aria-hidden="true">Hi, i'm Agustin.</span>
+          Hi, i'm Agustin.
+          <span aria-hidden="true">Hi, i'm Agustin.</span>
+        </p>
+        <h3> FullStack web developer</h3>
+      </div>
+      <div className={style.scrollDown}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <canvas id="canvas" width="800" height="960" className={style.canvas}>
+        Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+      </canvas>
+      <div className={style.planetas}>
         <img
           src="./img/planeta1.png"
           alt="planeta1"
@@ -137,19 +132,16 @@ function Home(props) {
             />
           </>
         )}
-        <div
-          className={style.asteroidContainer}
-          ref={asteroidContainerRef}
-          style={{ opacity: opacity }}
-        >
-          <img
-            src="./img/piedras.png"
-            alt="piedras"
-            className={style.asteroid}
-          />
-        </div>
       </div>
-    </ThemeProvider>
+      <div className={style.asteroidContainer} style={{ opacity: opacity }}>
+        <img
+          src="./img/piedras.png"
+          alt="piedras"
+          ref={asteroidContainerRef}
+          className={style.asteroid}
+        />
+      </div>
+    </div>
   );
 }
 
