@@ -4,10 +4,23 @@
     margin-left: 10%;
     width: 90%;
     gap: 0;
+    background-image: url("../../../public/img/fondosolo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
 
 .blob{
   z-index: 10;
+}
+
+.city{
+  display: flex;
+  position: fixed;
+  left: 0;
+  z-index: 0;
 }
 
 @media (max-width: 1266px) {

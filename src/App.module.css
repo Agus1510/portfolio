@@ -1,7 +1,7 @@
 .app {
   display: flex;
   width: 100vw;
-  background-color: rgb(16, 16, 16);
+  background-image: url("../public/img/fondosolo.png");
 }
 .flexColumn{
   margin-left: 10%;
