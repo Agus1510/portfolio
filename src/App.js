@@ -38,19 +38,19 @@ function App() {
 
   const blob = document.getElementById("blob");
 
-  document.body.onpointermove = (event) => {
-    const { clientX, clientY } = event;
-    blob.animate(
-      {
-        left: `${clientX}px`,
-        top: `${clientY}px`,
-      },
-      { duration: 3000, fill: "forwards" }
-    );
-  };
+  // document.body.onpointermove = (event) => {
+  //   const { clientX, clientY } = event;
+  //   blob.animate(
+  //     {
+  //       left: `${clientX}px`,
+  //       top: `${clientY}px`,
+  //     },
+  //     { duration: 3000, fill: "forwards" }
+  //   );
+  // };
   return (
     <div className={style.app}>
-      <div id="blob" className={style.blob} />
+      {/* <div id="blob" className={style.blob} /> */}
       <NavBar theme={theme} />
       <NavBarMobile theme={theme} />
       <Routes>
