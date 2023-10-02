@@ -36,7 +36,7 @@ function App() {
     window.scrollTo(0, 0);
   }, [dispatch]);
 
-  const blob = document.getElementById("blob");
+  // const blob = document.getElementById("blob");
 
   // document.body.onpointermove = (event) => {
   //   const { clientX, clientY } = event;

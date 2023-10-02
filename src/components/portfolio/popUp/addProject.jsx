@@ -6,7 +6,6 @@ import { useState } from "react";
 import { setAddRoom } from "../../../redux/reducer";
 import { createRoom, getAllRooms } from "../../../redux/actions";
 import Tiptap from "../../tiptap/tiptap";
-import { Navigate } from "react-router-dom";
 
 function AddProject() {
   const [input, setInput] = useState({});

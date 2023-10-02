@@ -1,7 +1,5 @@
 import React from "react";
 import darkTheme from "./aboutMeDark.module.css";
-import lightTheme from "./aboutMeLight.module.css";
-import { ThemeProvider } from "styled-components";
 var style = darkTheme;
 function AboutMe(props) {
   return (

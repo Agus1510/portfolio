@@ -1,7 +1,5 @@
 import React from "react";
 import darkTheme from "./skillsDark.module.css";
-import lightTheme from "./skillsLight.module.css";
-import { ThemeProvider } from "styled-components";
 
 var style = darkTheme;
 

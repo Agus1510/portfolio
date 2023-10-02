@@ -126,29 +126,29 @@ export const auhtGoogle = createAsyncThunk(
   }
 );
 
-export const deleteUser = createAsyncThunk(
-  "/usersprivate/deleteuser",
-  async (obj) => {
-    try {
-      let config = {
-        headers: {
-          "Content-Type": "application/json",
-          authorization: `Bearer ${obj.token}`,
-        },
-        data: {
-          id: obj.userId,
-        },
-      };
+// export const deleteUser = createAsyncThunk(
+//   "/usersprivate/deleteuser",
+//   async (obj) => {
+//     try {
+//       let config = {
+//         headers: {
+//           "Content-Type": "application/json",
+//           authorization: `Bearer ${obj.token}`,
+//         },
+//         data: {
+//           id: obj.userId,
+//         },
+//       };
 
-      const metaData = await axios.delete(
-        `/myportfolio/usersprivate/deleteUser`,
-        config
-      );
-    } catch (err) {
-      console.log(err.response.data);
-    }
-  }
-);
+//       const metaData = await axios.delete(
+//         `/myportfolio/usersprivate/deleteUser`,
+//         config
+//       );
+//     } catch (err) {
+//       console.log(err.response.data);
+//     }
+//   }
+// );
 
 export const deleteRoom = createAsyncThunk(
   "/roomsprivate/deleteRoom",

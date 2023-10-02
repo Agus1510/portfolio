@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   language: "", // anda
   theme: "dark", // anda
-  addRoom: false,
   authToken: "", //anda
   user: {}, // anda
   isLogged: false, // anda

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import darkTheme from "./portfolioDark.module.css";
-import lightTheme from "./portfolioLight.module.css";
-import { ThemeProvider } from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import Link from "@tiptap/extension-link";
 import { EditorContent, useEditor } from "@tiptap/react";
