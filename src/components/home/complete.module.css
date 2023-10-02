@@ -3,6 +3,8 @@
     flex-direction: column;
     margin-left: 10%;
     width: 90%;
+    max-width: 100%; /* Ajusta según tus necesidades */
+    max-height: 100%;
     gap: 0;
     background-image: url("../../../public/img/fondosolo.png");
     background-attachment: fixed;
