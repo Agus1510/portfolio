@@ -372,6 +372,9 @@
     .flexContainer {
       justify-content: center;
       overflow: hidden;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: contain;
     }
   
     .description {
