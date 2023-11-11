@@ -382,11 +382,13 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-              background-attachment: none;
+              background-attachment: local;
+              background-image: url("../../../public/img/fondophone.png");
               width: 100vw;
               height: 100vh;
               background-size: 100% 100%;
-              background-image: url("../../../public/img/fondophone.png");
+              background-position: center;
+              background-repeat: none;
       overflow: hidden;
       z-index: 3;
       
