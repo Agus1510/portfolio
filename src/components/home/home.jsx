@@ -51,17 +51,23 @@ function Home(props) {
         speedMultiplier = 3.5;
       }
 
-      // Calcula la posición horizontal en función del scroll (para los planetas 1, 2 y 3)
-      const leftPosition123 = -scrollY * speedMultiplier; // Ajusta el valor según la velocidad de desplazamiento
-      planet1Ref.current.style.left = `${leftPosition123}px`;
-      planet2Ref.current.style.left = `${leftPosition123}px`;
-      planet3Ref.current.style.left = `${leftPosition123}px`;
+      if (windowWidth <= 1000) {
+        const leftPosition123 = -scrollY * speedMultiplier; // Ajusta el valor según la velocidad de desplazamiento
+        planet1Ref.current.style.left = `${leftPosition123}px`;
+        planet2Ref.current.style.left = `${leftPosition123}px`;
+      } else {
+        // Calcula la posición horizontal en función del scroll (para los planetas 1, 2 y 3)
+        const leftPosition123 = -scrollY * speedMultiplier; // Ajusta el valor según la velocidad de desplazamiento
+        planet1Ref.current.style.left = `${leftPosition123}px`;
+        planet2Ref.current.style.left = `${leftPosition123}px`;
+        planet3Ref.current.style.left = `${leftPosition123}px`;
 
-      // Calcula la posición horizontal en función del scroll (para los planetas 4, 5 y 6)
-      const rightPosition456 = scrollY * speedMultiplier; // Ajusta el valor según la velocidad de desplazamiento
-      planet4Ref.current.style.left = `${rightPosition456}px`;
-      planet5Ref.current.style.left = `${rightPosition456}px`;
-      planet6Ref.current.style.left = `${rightPosition456}px`;
+        // Calcula la posición horizontal en función del scroll (para los planetas 4, 5 y 6)
+        const rightPosition456 = scrollY * speedMultiplier; // Ajusta el valor según la velocidad de desplazamiento
+        planet4Ref.current.style.left = `${rightPosition456}px`;
+        planet5Ref.current.style.left = `${rightPosition456}px`;
+        planet6Ref.current.style.left = `${rightPosition456}px`;
+      }
 
       setOpacity(calculatedOpacity);
     };
